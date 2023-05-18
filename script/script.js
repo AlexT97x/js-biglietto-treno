@@ -11,10 +11,10 @@ document.getElementById('tratta_km').innerHTML = 'Lunghezza tratta in chilometri
 let prezzo;
 
 if(eta<18){
-    prezzo = (tratta_km * 0.21)*0.2;
+    prezzo = (tratta_km * 0.21)*0.8;
     document.getElementById('prezzo').innerHTML = nome +' Il prezzo è ' + prezzo.toFixed(2);
-} else if(eta>=65){
-    prezzo = (tratta_km * 0.21)*0.4;
+} else if(eta>65){
+    prezzo = (tratta_km * 0.21)*0.6;
     document.getElementById('prezzo').innerHTML = nome +' Il prezzo è ' + prezzo.toFixed(2);
 }
 else{
